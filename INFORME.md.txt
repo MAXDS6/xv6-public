@@ -1,0 +1,30 @@
+# INFORME DE INSTALACIÓN - xv6
+
+Este documento describe los pasos realizados para la instalación, configuración y compilación del sistema operativo educativo **xv6** en mi entorno local.
+
+
+## 1. Requisitos previos
+
+Antes de compilar xv6 es necesario instalar:
+Instalar ubuntu en caso de usar windows con WSL2 
+
+Luego hay que ejecutar unos comandos en el bash:
+sudo apt update && sudo apt upgrade -y
+sudo apt install build-essential qemu-system-x86 git -y
+git clone git://github.com/mit-pdos/xv6-riscv.git
+creé la rama "grupoj"
+instalé las dependencias necesarias
+make para compilar xv6
+make qemu para ejecutar xv6
+
+Luego se abre otra visual donde se pueden ejecutar estos comandos:
+$ ls
+$ echo "Hola xv6"
+$ cat README
+Realicé capturas de pantalla que lo confirman
+
+Los problemas que tuve principalmente fue la instalación de ubuntu, ya que al tener un comptador de torre mas o menos antiguo, deben haber habido algunas 
+configuraciones que no estaban del todo bien ajustadas y tuve que resolverlo de manera manual como entrar a la BIOS ya activar la virtualización del CPU desde ahí.
+
+
+
